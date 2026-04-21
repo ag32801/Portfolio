@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agasto Augustine — Webentwickler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+    <a href="#hero" class="nav-logo">AA<span>_dev</span></a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#about"    data-nav-de="Über mich" data-nav-en="About">Über mich</a></li>
+        <li><a href="#skills"   data-nav-de="Kenntnisse" data-nav-en="Skills">Kenntnisse</a></li>
+        <li><a href="#projects" data-nav-de="Projekte" data-nav-en="Projects">Projekte</a></li>
+        <li><a href="#cv"       data-nav-de="Lebenslauf" data-nav-en="CV">Lebenslauf</a></li>
+        <li><a href="#contact"  data-nav-de="Kontakt" data-nav-en="Contact">Kontakt</a></li>
+    </ul>
+    <div class="nav-right">
+        <div class="lang-toggle">
+            <button class="lang-btn active" onclick="setLang('de')" aria-label="Deutsch">DE</button>
+            <button class="lang-btn"        onclick="setLang('en')" aria-label="English">EN</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <p class="hero-tag fade-up" style="--delay:0.1s">
+                <span data-lang="de">Webentwickler · B.Sc. Informatik</span>
+                <span data-lang="en">Web Developer · B.Sc. Computer Science</span>
+            </p>
+            <h1 class="fade-up" style="--delay:0.22s">
+                Agasto<br>
+                <span class="name-highlight">Augustine<span class="cursor"></span></span>
+            </h1>
+            <p class="hero-sub fade-up" style="--delay:0.38s">
+                <span data-lang="de">Frontend-Entwickler mit Leidenschaft für sauberen Code, responsive Webanwendungen und nutzerfreundliche Interfaces.</span>
+                <span data-lang="en">Frontend developer passionate about clean code, responsive web apps and user-friendly interfaces.</span>
+            </p>
+            <div class="hero-ctas fade-up" style="--delay:0.54s">
+                <a href="#projects" class="btn-primary">
+                    <span data-lang-inline="de">Projekte ansehen</span>
+                    <span data-lang-inline="en">View projects</span>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <span data-lang-inline="de">Kontakt aufnehmen</span>
+                    <span data-lang-inline="en">Get in touch</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image fade-up" style="--delay:0.3s">
+            <div class="image-ring">
+                <div class="image-frame">
+                    <img src="Photo%20CV.jpg" alt="Agasto Augustine">
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Nach unten scrollen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+    </a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <div class="section-header reveal">
+        <span class="section-num">01 —</span>
+        <h2 class="section-title">
+            <span data-lang="de">Über mich</span>
+            <span data-lang="en">About me</span>
+        </h2>
+    </div>
+    <div class="about-grid">
+        <div class="about-text reveal">
+            <div data-lang="de">
+                <p>Ich bin <strong>Agasto Augustine</strong>, Informatiker (B.Sc.) aus Gelsenkirchen mit neun Jahren Erfahrung in Deutschland. Mein Fokus liegt auf der Entwicklung moderner, responsiver Webanwendungen.</p>
+                <p>In meinen Projekten setze ich auf <strong>React, Spring Boot, REST-APIs und Neo4j</strong> — von der Konzeption bis zum Deployment mit Docker und CI/CD-Pipelines.</p>
+                <p>Ich bin motiviert, mich schnell in neue Technologien wie <strong>TYPO3 und Shopware</strong> einzuarbeiten, und bringe eine strukturierte, lösungsorientierte Arbeitsweise mit.</p>
+                <p>Sprachen: <strong>Deutsch C1 · Englisch C1 · Malayalam (Muttersprache)</strong></p>
+            </div>
+            <div data-lang="en">
+                <p>I'm <strong>Agasto Augustine</strong>, a Computer Science graduate (B.Sc.) based in Germany with nine years of experience living and studying here. My focus is on building modern, responsive web applications.</p>
+                <p>My projects use <strong>React, Spring Boot, REST APIs and Neo4j</strong> — from concept to deployment using Docker and CI/CD pipelines.</p>
+                <p>I'm highly motivated to learn new technologies like <strong>TYPO3 and Shopware</strong>, and I bring a structured, solution-oriented work approach.</p>
+                <p>Languages: <strong>German C1 · English C1 · Malayalam (native)</strong></p>
+            </div>
+        </div>
+        <div class="about-stats reveal">
+            <div class="stat-card">
+                <div class="stat-num">3+</div>
+                <div class="stat-label">
+                    <span data-lang-inline="de">Web-Projekte</span>
+                    <span data-lang-inline="en">Web projects</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">B.Sc.</div>
+                <div class="stat-label">
+                    <span data-lang-inline="de">Informatik, 2026</span>
+                    <span data-lang-inline="en">Comp. Science, 2026</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-num">C1</div>
+                <div class="stat-label">
+                    <span data-lang-inline="de">Deutsch &amp; Englisch</span>
+                    <span data-lang-inline="en">German &amp; English</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<div class="alt-bg">
+<section id="skills" class="section">
+    <div class="section-header reveal">
+        <span class="section-num">02 —</span>
+        <h2 class="section-title">
+            <span data-lang="de">Technische Kenntnisse</span>
+            <span data-lang="en">Technical Skills</span>
+        </h2>
+    </div>
+    <div class="skills-grid">
+        <div class="skill-group reveal">
+            <div class="skill-group-header">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <span class="skill-group-title">Frontend</span>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">React Router</span>
+                <span class="skill-tag">Responsive Design</span>
+            </div>
+        </div>
+        <div class="skill-group reveal">
+            <div class="skill-group-header">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H3l9-9 9 9h-2M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+                </div>
+                <span class="skill-group-title">Backend</span>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">REST-API</span>
+                <span class="skill-tag">Python</span>
+            </div>
+        </div>
+        <div class="skill-group reveal">
+            <div class="skill-group-header">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                </div>
+                <span class="skill-group-title">
+                    <span data-lang-inline="de">Datenbanken</span>
+                    <span data-lang-inline="en">Databases</span>
+                </span>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Neo4j</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Cypher</span>
+            </div>
+        </div>
+        <div class="skill-group reveal">
+            <div class="skill-group-header">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+                </div>
+                <span class="skill-group-title">Tools &amp; DevOps</span>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">Jira</span>
+                <span class="skill-tag">Scrum</span>
+                <span class="skill-tag">Confluence</span>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <div class="section-header reveal">
+        <span class="section-num">03 —</span>
+        <h2 class="section-title">
+            <span data-lang="de">Projekte</span>
+            <span data-lang="en">Projects</span>
+        </h2>
+    </div>
+    <div class="projects-grid">
+
+        <div class="project-card reveal">
+            <div class="project-header">
+                <span class="project-num">01</span>
+                <span class="badge badge-wip">WIP</span>
+            </div>
+            <h3 class="project-title">AI Symptom Checker</h3>
+            <p class="project-desc">
+                <span data-lang-inline="de">Responsive Webanwendung zur KI-gestützten Symptomanalyse. React-Frontend verbunden mit Neo4j-Graphdatenbank über eine selbst entwickelte Spring Boot REST-API. Deployment via Docker und CI/CD-Pipeline.</span>
+                <span data-lang-inline="en">Responsive web app for AI-powered symptom analysis. React frontend connected to a Neo4j graph database via a self-built Spring Boot REST API. Deployed with Docker and CI/CD pipeline.</span>
+            </p>
+            <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Spring Boot</span>
+                <span class="project-tag">Neo4j</span>
+                <span class="project-tag">REST-API</span>
+                <span class="project-tag">Docker</span>
+                <span class="project-tag">CI/CD</span>
+            </div>
+            <div class="project-footer">
+                <a href="https://github.com/ag32801/medgraph-backend" class="project-link" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="project-header">
+                <span class="project-num">02</span>
+            </div>
+            <h3 class="project-title">Spendensammler App</h3>
+            <p class="project-desc">
+                <span data-lang-inline="de">Datenbankgestützte Webanwendung im agilen Scrum-Team entwickelt. Frontend mit HTML5, CSS3, JavaScript. Backend-Integration mit Java/JSF und PostgreSQL. Projekt trotz Teamreduzierung von 7 auf 4 Entwickler erfolgreich abgeschlossen.</span>
+                <span data-lang-inline="en">Database-driven web app built in an agile Scrum team. Frontend with HTML5, CSS3, JavaScript. Backend integration with Java/JSF and PostgreSQL. Successfully delivered despite team reducing from 7 to 4 developers.</span>
+            </p>
+            <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Java/JSF</span>
+                <span class="project-tag">PostgreSQL</span>
+                <span class="project-tag">Scrum</span>
+            </div>
+            <div class="project-footer">
+                <a href="https://github.com/ag32801/spendensammler" class="project-link" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <div class="project-header">
+                <span class="project-num">03</span>
+                <span class="badge badge-thesis">
+                    <span data-lang-inline="de">Bachelorarbeit</span>
+                    <span data-lang-inline="en">Thesis</span>
+                </span>
+            </div>
+            <h3 class="project-title">
+                <span data-lang-inline="de">Strukturanalyse medizinischer Daten</span>
+                <span data-lang-inline="en">Medical Data Structure Analysis</span>
+            </h3>
+            <p class="project-desc">
+                <span data-lang-inline="de">Konzeption und Implementierung eines Graphdatenmodells in Neo4j zur Abbildung medizinischer Entitäten. Entwicklung komplexer Cypher-Abfragen. Abschlussnote: 2,5 — verfasst auf Deutsch (60 Seiten).</span>
+                <span data-lang-inline="en">Design and implementation of a graph data model in Neo4j for medical entities. Complex Cypher query development. Final grade: 2.5 — written in German (60 pages).</span>
+            </p>
+            <div class="project-tags">
+                <span class="project-tag">Neo4j</span>
+                <span class="project-tag">Cypher</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Graph DB</span>
+            </div>
+            <div class="project-footer">
+                <a href="bachelorarbeit.pdf" class="project-link" download>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <span data-lang-inline="de">PDF herunterladen</span>
+                    <span data-lang-inline="en">Download PDF</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CV -->
+<div class="alt-bg">
+<section id="cv" class="section">
+    <div class="section-header reveal">
+        <span class="section-num">04 —</span>
+        <h2 class="section-title">
+            <span data-lang="de">Lebenslauf</span>
+            <span data-lang="en">Curriculum Vitae</span>
+        </h2>
+    </div>
+    <div class="cv-card reveal">
+        <div class="cv-bg-text">CV</div>
+        <div class="cv-inner">
+            <div class="cv-avatar">
+                <img src="Photo%20CV.jpg" alt="Agasto Augustine">
+            </div>
+            <div class="cv-info">
+                <h3>Agasto Augustine</h3>
+                <p>
+                    <span data-lang-inline="de">Webentwickler (Frontend) · B.Sc. Informatik · Westfälische Hochschule Gelsenkirchen</span>
+                    <span data-lang-inline="en">Web Developer (Frontend) · B.Sc. Computer Science · Westfälische Hochschule Gelsenkirchen</span>
+                </p>
+                <div class="cv-actions">
+                    <a href="Agasto%20Lebenslauf.pdf" class="btn-primary" download>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        <span data-lang-inline="de">Lebenslauf herunterladen</span>
+                        <span data-lang-inline="en">Download CV</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <div class="section-header reveal">
+        <span class="section-num">05 —</span>
+        <h2 class="section-title">
+            <span data-lang="de">Kontakt</span>
+            <span data-lang="en">Contact</span>
+        </h2>
+    </div>
+    <div class="contact-wrap">
+        <div class="contact-info reveal">
+            <p class="contact-intro">
+                <span data-lang-inline="de">Ich freue mich über Anfragen zu Projekten, Kooperationen oder Jobangeboten.</span>
+                <span data-lang-inline="en">I'm happy to hear from you regarding projects, collaborations or job opportunities.</span>
+            </p>
+            <div class="contact-links">
+                <a href="mailto:agasto.augustine@web.de" class="contact-link">
+                    <span class="contact-link-icon">@</span>
+                    agasto.augustine@web.de
+                </a>
+                <div class="contact-link">
+                    <span class="contact-link-icon">#</span>
+                    +49 152 09762178
+                </div>
+                <a href="https://github.com/ag32801" target="_blank" rel="noopener" class="contact-link">
+                    <span class="contact-link-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </span>
+                    github.com/ag32801
+                </a>
+                <a href="https://linkedin.com/in/agasto-k-augustine" target="_blank" rel="noopener" class="contact-link">
+                    <span class="contact-link-icon">in</span>
+                    linkedin.com/agasto-k-augustine
+                </a>
+            </div>
+        </div>
+        <form class="contact-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" placeholder="max@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">
+                    <span data-lang-inline="de">Betreff</span>
+                    <span data-lang-inline="en">Subject</span>
+                </label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">
+                    <span data-lang-inline="de">Nachricht</span>
+                    <span data-lang-inline="en">Message</span>
+                </label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">
+                <span data-lang-inline="de">Nachricht senden</span>
+                <span data-lang-inline="en">Send message</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <span>© 2026 Agasto Augustine</span>
+    <span class="footer-dot">·</span>
+    <span>HTML · CSS · JS</span>
+    <span class="footer-dot">·</span>
+    <a href="https://github.com/ag32801" target="_blank" rel="noopener">github.com/ag32801</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
